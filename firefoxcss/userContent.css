@@ -1,0 +1,33 @@
+@-moz-document url("about:newtab"), url("about:home"), url("about:blank") {
+  body {
+    background-image: url("pikapika.png"); 
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position-x: center;
+    background-position-y: bottom -200px;
+  }
+}
+
+@-moz-document url-prefix(about:home), url-prefix(about:newtab) {
+  .logo {
+    background-image: url("arch_logo_blue.png") !important;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: center;
+  }
+  .wordmark {
+    background-image: url("archfox.png") !important;
+  }
+
+  body {
+    --newtab-background-color-secondary: rgba(49, 50, 68, 100) !important; 
+  }
+}
+
+@-moz-document url-prefix("about:blank") {
+  body {
+    background-color: rgba(17, 17, 27, 100);
+  }
+}
